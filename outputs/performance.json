@@ -1,0 +1,196 @@
+{
+  "rows_requested": 100000,
+  "seed": 42,
+  "generate_seconds": 3.094,
+  "customers_load_seconds": 7.671,
+  "orders_load_seconds": 6.543,
+  "customers_rows_per_second": 13037,
+  "orders_rows_per_second": 15284,
+  "generated": {
+    "customers_path": "customers.csv",
+    "orders_path": "orders.csv",
+    "customers_sha256": "801ab8e69d25434972d88246608e6a1af4d036e4054ff56b4d6f1783a9785ae9",
+    "orders_sha256": "a169774b0ae0218879e77680d13b64c20da33eb95abcc62d787987538ba6beab",
+    "customers_data_rows": 100008,
+    "orders_data_rows": 100010,
+    "base_rows": 100000,
+    "seed": 42
+  },
+  "reconciliation_passed": true,
+  "aggregates": {
+    "customers": 100000,
+    "customer_history": 100000,
+    "orders": 100001,
+    "order_customers": 100000,
+    "order_amount_cents": 12602929218,
+    "order_history": 100001,
+    "orders_by_status": [
+      {
+        "order_status": "cancelled",
+        "orders": 25000,
+        "amount_cents": 3126139513
+      },
+      {
+        "order_status": "paid",
+        "orders": 25000,
+        "amount_cents": 3139453748
+      },
+      {
+        "order_status": "placed",
+        "orders": 24999,
+        "amount_cents": 3111686231
+      },
+      {
+        "order_status": "shipped",
+        "orders": 25002,
+        "amount_cents": 3225649726
+      }
+    ],
+    "customers_by_country": [
+      {
+        "country_code": "AU",
+        "customers": 12500
+      },
+      {
+        "country_code": "CA",
+        "customers": 12500
+      },
+      {
+        "country_code": "DE",
+        "customers": 12500
+      },
+      {
+        "country_code": "FR",
+        "customers": 12500
+      },
+      {
+        "country_code": "GB",
+        "customers": 12500
+      },
+      {
+        "country_code": "IN",
+        "customers": 12500
+      },
+      {
+        "country_code": "SG",
+        "customers": 12500
+      },
+      {
+        "country_code": "US",
+        "customers": 12500
+      }
+    ],
+    "rejects_by_reason": [
+      {
+        "dataset": "customers",
+        "reason_code": "business_rule_violation",
+        "rejected": 1
+      },
+      {
+        "dataset": "customers",
+        "reason_code": "duplicate_key_in_batch",
+        "rejected": 3
+      },
+      {
+        "dataset": "customers",
+        "reason_code": "invalid_enum",
+        "rejected": 1
+      },
+      {
+        "dataset": "customers",
+        "reason_code": "invalid_format",
+        "rejected": 1
+      },
+      {
+        "dataset": "customers",
+        "reason_code": "missing_required_field",
+        "rejected": 2
+      },
+      {
+        "dataset": "orders",
+        "reason_code": "business_rule_violation",
+        "rejected": 3
+      },
+      {
+        "dataset": "orders",
+        "reason_code": "duplicate_key_in_batch",
+        "rejected": 2
+      },
+      {
+        "dataset": "orders",
+        "reason_code": "invalid_enum",
+        "rejected": 1
+      },
+      {
+        "dataset": "orders",
+        "reason_code": "invalid_format",
+        "rejected": 1
+      },
+      {
+        "dataset": "orders",
+        "reason_code": "invalid_reference",
+        "rejected": 1
+      },
+      {
+        "dataset": "orders",
+        "reason_code": "malformed_row",
+        "rejected": 1
+      }
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "b49e3060-d4e4-41dd-b4c6-6f5d34c090ab",
+      "dataset": "customers",
+      "status": "succeeded",
+      "started_at": "2026-10-30T14:43:09.353542+00:00",
+      "ended_at": "2026-10-30T14:43:16.670626+00:00",
+      "duration_ms": 7317,
+      "source_file": "customers.csv",
+      "input_sha256": "801ab8e69d25434972d88246608e6a1af4d036e4054ff56b4d6f1783a9785ae9",
+      "input_bytes": 10657807,
+      "input_count": 100008,
+      "accepted_count": 100000,
+      "rejected_count": 8,
+      "inserted_count": 100000,
+      "updated_count": 0,
+      "unchanged_count": 0,
+      "failure_reason": null,
+      "reject_breakdown": {
+        "business_rule_violation": 1,
+        "duplicate_key_in_batch": 3,
+        "invalid_enum": 1,
+        "invalid_format": 1,
+        "missing_required_field": 2
+      },
+      "pipeline_version": "1.0.0"
+    },
+    {
+      "run_id": "40038e32-c007-4e68-b648-977b74080083",
+      "dataset": "orders",
+      "status": "succeeded",
+      "started_at": "2026-10-30T14:43:16.826474+00:00",
+      "ended_at": "2026-10-30T14:43:23.245674+00:00",
+      "duration_ms": 6419,
+      "source_file": "orders.csv",
+      "input_sha256": "a169774b0ae0218879e77680d13b64c20da33eb95abcc62d787987538ba6beab",
+      "input_bytes": 8906622,
+      "input_count": 100010,
+      "accepted_count": 100001,
+      "rejected_count": 9,
+      "inserted_count": 100001,
+      "updated_count": 0,
+      "unchanged_count": 0,
+      "failure_reason": null,
+      "reject_breakdown": {
+        "business_rule_violation": 3,
+        "duplicate_key_in_batch": 2,
+        "invalid_enum": 1,
+        "invalid_format": 1,
+        "invalid_reference": 1,
+        "malformed_row": 1
+      },
+      "pipeline_version": "1.0.0"
+    }
+  ]
+}

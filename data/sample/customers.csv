@@ -1,0 +1,15 @@
+customer_id,full_name,email,country_code,status,signup_at,updated_at
+C000101,Alice Example,Alice@Example.com,US,active,2024-01-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000102,Bob Stone,bob.stone@example.com,CA,active,2024-02-02T03:04:05-05:00,2024-03-01T00:00:00-05:00
+C000103,Carol Iyer,carol.iyer@example.in,IN,active,2023-12-31T18:30:00+00:00,2024-06-15T12:00:00+05:30
+C000104,Diego Mar,diego.mar@example.de,DE,inactive,2022-05-05T05:05:05+00:00,2022-05-05T05:05:05+00:00
+C000101,Alice Duplicate,alice@example.com,US,active,2024-01-01T00:00:00+00:00,2024-08-01T00:00:00+00:00
+,Missing Id,missing.id@example.com,US,active,2024-01-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000105,Bad Email,not-an-email,US,active,2024-01-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000106,,blank.name@example.com,GB,active,2024-01-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000107,Bad Country,bad.country@example.com,ZZ,active,2024-01-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000108,Time Travel,time.travel@example.com,FR,active,2024-05-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000109,Naive Time,naive.time@example.com,AU,active,2024-01-01T00:00:00,2024-01-01T00:00:00
+C000110,Bad Status,bad.status@example.com,SG,ACTIVE,2024-01-01T00:00:00+00:00,2024-01-01T00:00:00+00:00
+C000111,Priya Shah,Priya.Shah@Example.com,in,suspended,2024-07-01T00:00:00+05:30,2024-07-02T00:00:00+05:30
+C000112,Short Row,short.row@example.com,US

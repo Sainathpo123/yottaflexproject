@@ -1,0 +1,6 @@
+[project]
+name = "yottaflex-data-pipeline"
+version = "1.0.0"
+description = "Idempotent local data pipeline for customers and orders."
+requires-python = ">=3.10"
+readme = "README.md"

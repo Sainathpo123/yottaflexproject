@@ -1,0 +1,2 @@
+# No third-party packages.
+# Requires Python 3.10 or newer from a clean environment.
